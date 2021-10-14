@@ -1,19 +1,18 @@
-import 'package:flutter_chat_ui/models/user_model.dart';
+import 'user_model.dart';
 
 class Message {
   final User sender;
-  final String
-      time; // Would usually be type DateTime or Firebase Timestamp in production apps
+  final String time;
   final String text;
   final bool isLiked;
   final bool unread;
 
   Message({
-    this.sender,
-    this.time,
-    this.text,
-    this.isLiked,
-    this.unread,
+    required this.sender,
+    required this.time,
+    required this.text,
+    required this.isLiked,
+    required this.unread,
   });
 }
 
@@ -25,63 +24,61 @@ final User currentUser = User(
 );
 
 // USERS
-final User greg = User(
+final User billie = User(
   id: 1,
-  name: 'Greg',
-  imageUrl: 'assets/images/greg.jpg',
+  name: 'Billie',
+  imageUrl: 'assets/images/billie.jpg',
 );
-final User james = User(
+final User wail = User(
   id: 2,
-  name: 'James',
-  imageUrl: 'assets/images/james.jpg',
+  name: 'Wail',
+  imageUrl: 'assets/images/wail.jpg',
 );
-final User john = User(
+final User kamal = User(
   id: 3,
-  name: 'John',
-  imageUrl: 'assets/images/john.jpg',
+  name: 'Kamal',
+  imageUrl: 'assets/images/kamal.jpg',
 );
-final User olivia = User(
+final User kamilia = User(
   id: 4,
-  name: 'Olivia',
-  imageUrl: 'assets/images/olivia.jpg',
+  name: 'Kamilia',
+  imageUrl: 'assets/images/kamilia.jpg',
 );
-final User sam = User(
+final User nicole = User(
   id: 5,
-  name: 'Sam',
-  imageUrl: 'assets/images/sam.jpg',
+  name: 'Nicole',
+  imageUrl: 'assets/images/nicole.jpg',
 );
 final User sophia = User(
   id: 6,
   name: 'Sophia',
   imageUrl: 'assets/images/sophia.jpg',
 );
-final User steven = User(
+final User tupac = User(
   id: 7,
   name: 'Steven',
   imageUrl: 'assets/images/steven.jpg',
 );
 
-// FAVORITE CONTACTS
-List<User> favorites = [sam, steven, olivia, john, greg];
+List<User> favo = [nicole, tupac, kamilia, kamal, billie];
 
-// EXAMPLE CHATS ON HOME SCREEN
 List<Message> chats = [
   Message(
-    sender: james,
+    sender: wail,
     time: '5:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
     unread: true,
   ),
   Message(
-    sender: olivia,
+    sender: kamilia,
     time: '4:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
     unread: true,
   ),
   Message(
-    sender: john,
+    sender: kamal,
     time: '3:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
@@ -95,21 +92,21 @@ List<Message> chats = [
     unread: true,
   ),
   Message(
-    sender: steven,
+    sender: tupac,
     time: '1:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
     unread: false,
   ),
   Message(
-    sender: sam,
+    sender: nicole,
     time: '12:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
     unread: false,
   ),
   Message(
-    sender: greg,
+    sender: billie,
     time: '11:30 AM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
@@ -117,10 +114,9 @@ List<Message> chats = [
   ),
 ];
 
-// EXAMPLE MESSAGES IN CHAT SCREEN
 List<Message> messages = [
   Message(
-    sender: james,
+    sender: wail,
     time: '5:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: true,
@@ -134,14 +130,14 @@ List<Message> messages = [
     unread: true,
   ),
   Message(
-    sender: james,
+    sender: wail,
     time: '3:45 PM',
     text: 'How\'s the doggo?',
     isLiked: false,
     unread: true,
   ),
   Message(
-    sender: james,
+    sender: wail,
     time: '3:15 PM',
     text: 'All the food',
     isLiked: true,
@@ -155,7 +151,7 @@ List<Message> messages = [
     unread: true,
   ),
   Message(
-    sender: james,
+    sender: wail,
     time: '2:00 PM',
     text: 'I ate so much food today.',
     isLiked: false,
