@@ -56,8 +56,8 @@ final User sophia = User(
 );
 final User tupac = User(
   id: 7,
-  name: 'Steven',
-  imageUrl: 'assets/images/steven.jpg',
+  name: 'Tupac',
+  imageUrl: 'assets/images/tupac.jpg',
 );
 
 List<User> favo = [nicole, tupac, kamilia, kamal, billie];
