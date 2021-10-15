@@ -15,7 +15,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
   Widget build(BuildContext context) {
     return Container(
       height: 90,
-      color: Colors.blue,
+      color: Color(0xFFf56042),
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: listCategory.length,
