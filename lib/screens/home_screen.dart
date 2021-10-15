@@ -1,4 +1,6 @@
+import 'package:chat_clone/models/message_model.dart';
 import 'package:chat_clone/widgets/category_widget.dart';
+import 'package:chat_clone/widgets/chat_widget.dart';
 import 'package:chat_clone/widgets/contacts_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -52,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Column(
                   children: <Widget>[
                     ContactWidget(),
+                    ChatWidget(),
                   ],
                 ),
               ),

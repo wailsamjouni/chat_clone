@@ -62,7 +62,7 @@ final User tupac = User(
 
 List<User> favo = [nicole, tupac, kamilia, kamal, billie];
 
-List<Message> chats = [
+List<Message> chatList = [
   Message(
     sender: wail,
     time: '5:30 PM',
