@@ -1,4 +1,3 @@
-import 'package:chat_clone/models/message_model.dart';
 import 'package:chat_clone/widgets/category_widget.dart';
 import 'package:chat_clone/widgets/chat_widget.dart';
 import 'package:chat_clone/widgets/contacts_widget.dart';
@@ -29,14 +28,13 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
           ),
           actions: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Icon(
-                Icons.search,
-                size: 29.0,
-                color: Colors.white,
-              ),
-            )
+            IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.search,
+                  size: 30.0,
+                  color: Colors.white,
+                ))
           ],
           elevation: 0,
         ),
