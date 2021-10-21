@@ -1,5 +1,7 @@
 # chat_clone
 
+I found this awesome UI design on dribbble
+
 A new Flutter project.
 
 ## Getting Started
