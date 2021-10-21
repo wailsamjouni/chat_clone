@@ -24,12 +24,13 @@ class ChatWidget extends StatelessWidget {
                   final Message chatElement = chatList[index];
                   return GestureDetector(
                     onTap: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => ChatScreen(
-                            user: chatElement.sender,
-                          ),
-                        )),
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => ChatScreen(
+                          user: chatElement.sender,
+                        ),
+                      ),
+                    ),
                     child: Container(
                       decoration: BoxDecoration(
                         color: chatElement.unread
@@ -67,7 +68,7 @@ class ChatWidget extends StatelessWidget {
                                   SizedBox(height: 6.0),
                                   Container(
                                     width: MediaQuery.of(context).size.width *
-                                        0.45,
+                                        0.40,
                                     child: Text(
                                       chatList[index].text,
                                       style: TextStyle(
